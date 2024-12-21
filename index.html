@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join us for HealyFest 2025, the ultimate music festival of the year! Enjoy amazing performances, great vibes, and unforgettable moments.">
+    <meta name="keywords" content="music festival, HealyFest 2025, live music, concerts">
+    <meta name="author" content="Your Name">
+    <title>HealyFest 2025 | Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #FF7E5F, #FEB47B);
+            color: #333;
+        }
+
+        .hero {
+            background: url('images/tropical-header.jpg') no-repeat center center/cover;
+            text-align: center;
+            color: white;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+        }
+
+        .cta-button {
+            background-color: #FF5722;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .cta-button:hover {
+            background-color: #E64A19;
+        }
+
+        #highlights {
+            background: #FFF3E0;
+            padding: 50px 20px;
+        }
+
+        .highlights-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .highlight {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            max-width: 300px;
+        }
+
+        .highlight img {
+            width: 100%;
+        }
+
+        .highlight h3 {
+            margin: 10px 0;
+            color: #FF5722;
+        }
+
+        #countdown {
+            background: #FFE0B2;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        footer {
+            background: #FF5722;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #FFCCBC;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="lineup.html">Lineup</a></li>
+        <li><a href="tickets.html">Tickets</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+    </ul>
+</nav>
+        <div class="hero">
+            <h1>Welcome to HealyFest 2025</h1>
+            <p>The ultimate music festival experience for everyone!</p>
+            <p><strong>July 11-13, 2025</strong></p>
+            <p><strong>Malahide Castle, Dublin</strong></p>
+            <a href="tickets.html" class="cta-button">Get Your Tickets</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="highlights">
+            <h2>Festival Highlights</h2>
+            <div class="highlights-container">
+                <div class="highlight">
+                    <img src="images/home-1.jpg" alt="Headliners">
+                    <h3>Top Headliners</h3>
+                    <p>Experience performances by the biggest names in music!</p>
+                </div>
+                <div class="highlight">
+                    <img src="images/home-2.jpg" alt="Gourmet Food">
+                    <h3>Gourmet Food Trucks</h3>
+                    <p>Delicious food trucks and culinary experiences await!</p>
+                </div>
+                <div class="highlight">
+                    <img src="images/home-3.jpg" alt="Art Installations">
+                    <h3>Funfair Rides</h3>
+                    <p>Immerse yourself in carnival-esque rides suitable for all ages!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="countdown">
+            <h2>Countdown to HealyFest 2025</h2>
+            <div id="countdown-container">
+    <p id="demo"></p>
+</div>
+        </section>
+    </main>
+
+    <footer>
+    <p>&copy; 2024 HealyFest Music Festival. All rights reserved.</p>
+    <p>Follow us on: 
+        <a href="https://www.instagram.com/healyfest" target="_blank" rel="noopener noreferrer">Instagram</a> | 
+        <a href="https://www.facebook.com/healyfest" target="_blank" rel="noopener noreferrer">Facebook</a> | 
+        <a href="https://www.x.com/healyfest" target="_blank" rel="noopener noreferrer">X</a>
+    </p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+// Set the date we're counting down to
+var countDownDate = new Date("July 11, 2025 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+</body>
+</html>

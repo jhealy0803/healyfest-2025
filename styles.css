@@ -1,0 +1,155 @@
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #FF5722;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #E64A19;
+    border-radius: 5px;
+}
+
+.artists-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.artist {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    max-width: 200px;
+}
+
+.artist img {
+    border-radius: 20px;
+    width: 100%;
+    height: 300px;
+}
+
+.artist h3 {
+    margin-top: 10px;
+    color: #FF5722;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    text-align: left;
+    font-size: 1rem;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+table th {
+    background-color: #FF5722;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+table a {
+    color: #FF5722;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin: 20px auto;
+    max-width: 900px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+h2 {
+    color: #FF5722;
+    margin-bottom: 10px;
+}
+
+#festival-vision p, #unique-features ul {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#unique-features ul li {
+    margin: 10px 0;
+}
+
+#unique-features ul li strong {
+    color: #FF5722;
+}
+
+#demo {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 20px;
+  color: #ff4500; 
+}
+
+#countdown-container {
+  text-align: center;
+  background-color: #ffefd5; /* Light peach background */
+  border: 3px solid #ff4500; /* Orange border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+  max-width: 500px; /* Center it and limit the width */
+  margin: 30px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+#demo {
+  font-size: 50px; /* Large font size */
+  color: #ff4500; /* Bright orange text */
+  font-weight: bold; /* Make the text bold */
+  font-family: "Arial", sans-serif; /* Clean, modern font */
+}
+
+#demo {
+  animation: pulse 2s infinite; 
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    color: #ff4500;
+  }
+  50% {
+    transform: scale(1.1);
+    color: #ff6347; 
+  }
+}
